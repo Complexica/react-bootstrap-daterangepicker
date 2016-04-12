@@ -134,30 +134,8 @@
   max-width: 270px;
 }
 
-.daterangepicker.show-calendar .calendar.left th.next i {
-  display: none;
-  pointer-events: none;
-}
-
 .daterangepicker.show-calendar .calendar {
   display: block;
-}
-
-.daterangepicker.show-calendar-single .calendar {
-  display: block;
-}
-
-.daterangepicker.show-calendar-single .calendar.left .calendar-table {
-  border-right: 1px solid #dddddd;
-  border-radius: 4px;
-}
-
-.daterangepicker.show-calendar-single .calendar.left .calendar-table {
-  padding-right: 4px;
-}
-
-.daterangepicker.show-calendar-single .right {
-  display: none;
 }
 
 .daterangepicker .calendar.single .calendar-table {
@@ -180,27 +158,12 @@
 }
 
 .daterangepicker .calendar.left .calendar-table {
-  border-right: none;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.daterangepicker .calendar.right .calendar-table {
-  border-left: none;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
 }
 
 .daterangepicker .calendar.left {
-  margin: 4px 0 4px 4px;
-}
-
-.daterangepicker .calendar.right {
-  margin: 4px 4px 4px 0;
-}
-
-.daterangepicker .calendar.left .calendar-table {
-  padding-right: 12px;
+  margin: 4px;
 }
 
 .daterangepicker table {
@@ -230,10 +193,6 @@
   background: #eee;
 }
 
-.daterangepicker.show-calendar div.calendar.left th.next.available:hover {
-  background: none;
-}
-
 .daterangepicker td.in-range {
   background: #ebf4f8;
   border-radius: 0;
@@ -241,6 +200,10 @@
 
 .daterangepicker td.start-date {
   border-radius: 4px 0 0 4px;
+}
+
+i.disabled {
+  color: #CCCCCC;
 }
 
 .daterangepicker td.end-date {
@@ -375,6 +338,25 @@
   color: #fff;
 }
 
+.single-date-picker td.end-date {
+  color: #333;
+  background: #fff;
+}
+
+.single-date-picker td.in-range {
+  background: none;
+}
+
+.single-date-picker td.start-date {
+  background-color: #357ebd;
+  border-color: #3071a9;
+  color: #fff;
+}
+
 button.selected-date-range-btn div.pull-right span:not(.caret) {
   padding-right: 10px;
+}
+
+.daterangepicker.dropdown-menu.show-calendar {
+  min-width: inherit;
 }
